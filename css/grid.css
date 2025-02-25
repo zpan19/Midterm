@@ -1,0 +1,89 @@
+.navbar {
+    display: flex;
+    justify-content: space-between; /* pushing the elements as far apart as possible */
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
+  .navbar ul {
+    display: flex;
+    list-style: none;
+    /* no number, no dot */
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navbar ul li {
+    margin-right: 15px;  /* spacing */
+  }
+  
+  .navbar ul li:last-child {
+    margin-right: 0;
+  }
+  
+  .navbar ul li a {
+    color: #fff;
+    text-decoration: none; /* no underline */
+  }
+
+  
+
+  .grid-container {
+
+   
+
+    display: grid;
+    /* block-level */
+    grid-template-columns: 1fr 2fr 1fr;
+    /* Three columns with the middle one twice as wide as the others */
+    grid-template-rows: 200px 500px;
+    /* Two rows with different heights */
+    gap: 5px;
+    background-color: #5f7a8d;
+  }
+  
+  .grid-item-5 {
+    grid-column: 2 / 4;
+    /* Span from the second column to the end */
+    grid-row: 2;
+    /* Position at the second row */
+  }
+  
+  .grid-item {
+    background-color: #8ca1a5;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+  }
+  .item1-4 {
+    display: grid;
+    align-content: center; /* 垂直方向居中 */
+    justify-content: center; /* 水平方向居中 */
+    grid-column: 1;
+    grid-row: 1 / 3;
+    background-color: #44585b;
+   
+    /* Spanning from first to second row */
+  }
+  .item2-3 {
+
+    grid-column: 2/4;
+    grid-row: 1;
+    background-color: #021e23;
+  } /* First row, second column */
+
+  .item5-6 {
+
+ 
+    grid-column: 2 / 4;
+    /* Spanning second and third columns */
+    grid-row: 2;
+ 
+  }
+  .footer{
+    display: grid;
+    text-align: center;
+    background-color: #96a1a3;
+  }
+  

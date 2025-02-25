@@ -1,83 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/grid.css">
+  <script src="js/navbar.js"></script>
 </head>
-<style>
-body {
-        margin: 0;
-        height: 100vh;
-        background-color: red;
-}
-
-.wrapper {
-        display: flex; 
-         /* Flex container */
-        justify-content: center; 
-         /* Center children horizontally */
-        align-items: center; 
-         /* Center children vertically */
-        height: 100%; 
-         /* Full height of the body */
-}
 
 
-.container {
-        width: 50vw;
-        height: 50vh;
-        background-color: yellow;
-        border: 1px dashed black;
-        padding: 20px;
-        box-sizing: border-box; 
-}
 
-.content {
-        background-color: lightgreen;
-        height: 100%;
-        padding: 20px;
-        box-sizing: border-box;
-}
 
-.text {
-        background-color: lightblue;
-        height: 100%;
-}
 
-</style>
 
 
 
 <body>
-    <div class="wrapper">
-        <div class="container">
-          <div class="content">
-            <div class="text">Hello</div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="content">
-            <div class="text">World</div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="content">
-            <div class="text">World</div>
-          </div>
-        </div>
-
-        <div class="container">
-          <div class="content">
-            <div class="text">World</div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="content">
-            <div class="text">World</div>
-          </div>
-        </div>
+  <header>
+  <div class="navbar">
+    <div class="left-section">
+      <ul>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5">HTML5</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
+      </ul>
+    </div>
+    <div class="right-section">
+      <button data-bs-theme-value="dark">Dark</button>
+      <button data-bs-theme-value="light">Light</button>
+      <button>Contact Me</button>
+    </div>
   </div>
-  
+</header>
+
+<main>
+  <div class="grid-container">
+    <div class="item1-4">
+      <p>factorial</p>
+      <p>calculator</p>
+      <p>n!=1X2X3...XN</p>
+      <P>e.g.5！=120</P>
+
+      
+      <button onclick="enter()">Enter</button>
+
+    </div>
+    <div class="item2-3">
+      <input type="number" id="numberInput" placeholder="Enter a number" />
+      
+
+    </div>
+    <div class="item5-6"><h2 id="output"></h2></div>
+      
+    
+  </div></div>
+
+
+
+</main>
+
+
+<footer>
+
+  <div class="footer"><p >&copy;2025 Zian Pan. All right reserverd</p>
+
+
+</footer>
+
 </body>
 </html>
