@@ -42,12 +42,7 @@
     background-color: #5f7a8d;
   }
   
-  .grid-item-5 {
-    grid-column: 2 / 4;
-    /* Span from the second column to the end */
-    grid-row: 2;
-    /* Position at the second row */
-  }
+
   
   .grid-item {
     background-color: #8ca1a5;
@@ -67,7 +62,7 @@
     /* Spanning from first to second row */
   }
   .item2-3 {
-
+display: grid;
     grid-column: 2/4;
     grid-row: 1;
     background-color: #021e23;
@@ -75,15 +70,25 @@
 
   .item5-6 {
 
- 
+ display: grid;
     grid-column: 2 / 4;
     /* Spanning second and third columns */
     grid-row: 2;
+    background-color: rgb(80, 22, 22);
  
   }
   .footer{
-    display: grid;
+ 
     text-align: center;
     background-color: #96a1a3;
   }
   
+  .input-box input {
+    width: 100%;
+    font-size: 2rem;
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    background-color: #f0e68c; 
+    color: #333; 
+}
