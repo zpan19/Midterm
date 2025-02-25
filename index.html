@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+body {
+        margin: 0;
+        height: 100vh;
+        background-color: red;
+}
+
+.wrapper {
+        display: flex; 
+         /* Flex container */
+        justify-content: center; 
+         /* Center children horizontally */
+        align-items: center; 
+         /* Center children vertically */
+        height: 100%; 
+         /* Full height of the body */
+}
+
+
+.container {
+        width: 50vw;
+        height: 50vh;
+        background-color: yellow;
+        border: 1px dashed black;
+        padding: 20px;
+        box-sizing: border-box; 
+}
+
+.content {
+        background-color: lightgreen;
+        height: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+}
+
+.text {
+        background-color: lightblue;
+        height: 100%;
+}
+
+</style>
+
+
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+          <div class="content">
+            <div class="text">Hello</div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="content">
+            <div class="text">World</div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="content">
+            <div class="text">World</div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="content">
+            <div class="text">World</div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="content">
+            <div class="text">World</div>
+          </div>
+        </div>
+  </div>
+  
+</body>
+</html>
